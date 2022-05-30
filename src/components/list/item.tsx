@@ -9,7 +9,6 @@ type TItemProps = TItem & {
 };
 
 const StyledItem = styled.div`
-  padding-left: 10px;
 `;
 
 const StyledItemTitle = styled.div<{ isActive: boolean; hasChildren: boolean }>`
@@ -36,7 +35,7 @@ const StyledItemTitle = styled.div<{ isActive: boolean; hasChildren: boolean }>`
 const StyledChildrenContainer = styled.div`
   display: inline-flex;
   flex-direction: column;
-  padding-left: 10px;
+  padding-left: 20px;
   margin: 10px 0;
 `;
 

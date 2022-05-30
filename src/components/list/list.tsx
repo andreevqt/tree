@@ -9,7 +9,7 @@ const StyledList = styled.div`
     max-width: 300px;
     display: flex;
     flex-direction: column;
-    padding: 25px 25px 25px 30px;
+    padding: 25px 25px 25px 35px;
     border-radius: 3px;
     box-shadow: 0 0 10px 4px rgba(0, 0, 0, .1);
     background-color: ${theme.backgroundColor};

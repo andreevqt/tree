@@ -3,11 +3,10 @@ import styled, { css } from 'styled-components';
 import { TItem } from '../../services/api/responses';
 import ChevronDown from '../../icons/chevron-down';
 
-type TItemProps = TItem
-  & {
-    active: number;
-    setActive: (id: number) => void
-  }
+type TItemProps = TItem & {
+  active: number;
+  setActive: (id: number) => void
+};
 
 const StyledItem = styled.div`
   padding-left: 10px;

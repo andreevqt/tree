@@ -1,5 +1,5 @@
-import React from "react";
-import { TIconProps } from "../types/common";
+import React from 'react';
+import { TIconProps } from '../types/common';
 
 const ChevronDown = ({
   className,

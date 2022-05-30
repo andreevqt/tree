@@ -1,4 +1,4 @@
-import React, { useState, useId } from 'react';
+import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import { TItem } from '../../services/api/responses';
 import ChevronDown from '../../icons/chevron-down';
@@ -61,8 +61,6 @@ const Item: React.FC<TItemProps> = ({ id, name, descendants, active, setActive }
       setActive(id);
     }
   };
-
-  console.log(id);
 
   return (
     <StyledItem>

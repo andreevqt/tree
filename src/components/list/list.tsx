@@ -11,7 +11,7 @@ const StyledList = styled.div`
     flex-direction: column;
     padding: 25px 25px 25px 30px;
     border-radius: 3px;
-    box-shadow: 0 0 5px 4px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, .1);
     background-color: ${theme.backgroundColor};
   `}
 `;

@@ -44,7 +44,7 @@ const StyledStatus = styled.div<{ status: TStatus }>`
 
 type TListProps = TPowerUnitResponse;
 
-const List: React.FC<TListProps> = ({ name, items, status }) => {
+const List = ({ name, items, status }: TListProps) => {
   const [active, setActive] = useState(-1);
 
   return (

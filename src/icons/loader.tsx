@@ -1,10 +1,10 @@
 import React from 'react';
 import { TIconProps } from '../types/common';
 
-const Loader: React.FC<TIconProps> = ({
-  width = 86,
-  height = 86
-}) => (
+const Loader = ({
+  width = '86',
+  height = '86'
+}: TIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={width}

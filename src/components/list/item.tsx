@@ -3,11 +3,6 @@ import styled, { css } from 'styled-components';
 import { TItem } from '../../services/api/responses';
 import ChevronDown from '../../icons/chevron-down';
 
-type TItemProps = TItem & {
-  active: number;
-  setActive: (id: number) => void
-};
-
 const StyledItem = styled.div`
 `;
 
@@ -47,7 +42,12 @@ const StyledChevron = styled(ChevronDown).attrs(() => ({ width: '8', height: '8'
   `}
 `;
 
-const Item: React.FC<TItemProps> = ({ id, name, descendants, active, setActive }) => {
+type TItemProps = TItem & {
+  active: number;
+  setActive: (id: number) => void
+};
+
+const Item = ({ id, name, descendants, active, setActive }: TItemProps) => {
   const [isCollapsed, setCollapsed] = useState(false);
   const shouldRenderKids = isCollapsed && descendants;
   const hasChildren = !!descendants;

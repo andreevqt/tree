@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { powerUnit } from '../../services/api/api';
+import * as api from '../../services/api/api';
 import { TPowerUnitResponse } from '../../services/api/responses';
 import GlobalStyle from '../../theme/global-style';
 import List from '../list/list';
@@ -12,7 +12,7 @@ const App = () => {
 
   const fetchData = () => {
     setLoading(true);
-    return powerUnit.getById(1)
+    return api.powerUnit.getById(1)
       .then((data) => setData(data))
       .finally(() => setLoading(false));
   };

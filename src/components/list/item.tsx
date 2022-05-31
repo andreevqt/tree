@@ -55,7 +55,7 @@ const Item: React.FC<TItemProps> = ({ id, name, descendants, active, setActive }
   const handleClick = (e: React.SyntheticEvent) => {
     e.preventDefault();
     setCollapsed(!isCollapsed);
-    if (!hasChildren && id) {
+    if (!hasChildren) {
       setActive(id);
     }
   };

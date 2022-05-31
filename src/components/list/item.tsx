@@ -14,13 +14,14 @@ const StyledItemTitle = styled.div<{ isActive: boolean; hasChildren: boolean }>`
     align-items: center;
     color: ${theme.color};
     font-family: ${theme.font};
+    font-size: 12px;
     line-height: 1;
-    font-size: ${hasChildren ? '14px' : '12px'};
     ${isActive && css`
       background-color: ${theme.highlight};
       color: #fff;
     `}
     ${hasChildren && css`
+      font-size: 14px;
       font-weight: 600;
       cursor: pointer;
     `}
